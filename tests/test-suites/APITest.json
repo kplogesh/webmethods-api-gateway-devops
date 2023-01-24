@@ -21,7 +21,7 @@
 				}
 			],
 			"request": {
-				"url": "{{httpInvokeUrl}}/gateway/sampleapi/1/pet/1",
+				"url": "{{httpInvokeUrl}}/gateway/sampleapi/pet/1",
 				"method": "GET",
 				"header": [
 					{
