@@ -1,0 +1,19 @@
+{
+  "types": [
+    "api"
+  ],
+  "scope": [
+    {
+        "attributeName": "apiName",
+        "keyword": "sampleapi"
+    },
+    {
+        "attributeName": "apiDescription",
+        "keyword": ".*sampleapi.*"
+    }
+  ],
+  "condition": "or",
+  "includeOptions": {
+    "includeApplications": true
+  }
+}

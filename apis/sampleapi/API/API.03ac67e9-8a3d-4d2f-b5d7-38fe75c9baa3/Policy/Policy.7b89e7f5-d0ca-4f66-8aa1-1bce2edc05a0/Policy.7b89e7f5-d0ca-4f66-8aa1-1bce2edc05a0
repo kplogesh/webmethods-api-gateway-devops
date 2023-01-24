@@ -1,0 +1,26 @@
+{
+  "id" : "7b89e7f5-d0ca-4f66-8aa1-1bce2edc05a0",
+  "names" : [ {
+    "value" : "Default Policy for API sampleapi",
+    "locale" : "English"
+  } ],
+  "descriptions" : [ {
+    "value" : "",
+    "locale" : "English"
+  } ],
+  "policyEnforcements" : [ {
+    "enforcements" : [ {
+      "enforcementObjectId" : "e75fd94c-0146-4348-b588-23fb3efa7e56"
+    } ],
+    "stageKey" : "transport"
+  }, {
+    "enforcements" : [ {
+      "enforcementObjectId" : "61d382d1-7e57-4762-876d-74aad55c3ee3"
+    } ],
+    "stageKey" : "routing"
+  } ],
+  "policyScope" : "SERVICE",
+  "systemPolicy" : false,
+  "global" : false,
+  "active" : false
+}

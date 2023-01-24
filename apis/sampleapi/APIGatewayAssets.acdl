@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<asset_composite name="APIGatewayAssets" displayName="Assets for API Gateway" runtimeVersion="10.15" targetNamespace="http://namespaces.softwareag.com/webMethods/APIGateway" xmlns="http://namespaces.softwareag.com/acdl/1.0" xmlns:EDA="http://namespaces.softwareag.com/webMethods/EDA" xmlns:MWS="http://namespaces.softwareag.com/webMethods/MWS" xmlns:IS="http://namespaces.softwareag.com/webMethods/IS" xmlns:APIPORTAL="http://namespaces.softwareag.com/webMethods/APIPORTAL" xmlns:AgileApps="http://namespaces.softwareag.com/webMethods/AgileApps" xmlns:BROKER="http://namespaces.softwareag.com/webMethods/BROKER" xmlns:implDetails="http://namespaces.softwareag.com/acdl/implDetails" xmlns:UniversalMessaging="http://namespaces.softwareag.com/webMethods/UniversalMessaging" xmlns:TN="http://namespaces.softwareag.com/webMethods/TN" xmlns:RULES="http://namespaces.softwareag.com/webMethods/RULES" xmlns:BPM="http://namespaces.softwareag.com/webMethods/BPM" xmlns:Optimize="http://namespaces.softwareag.com/webMethods/Optimize">
+    <buildInfo name="BuildTimestamp" value="2023-01-24T06:22:10"/>
+    <asset name="API.03ac67e9-8a3d-4d2f-b5d7-38fe75c9baa3" displayName="sampleapi[1]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.7b89e7f5-d0ca-4f66-8aa1-1bce2edc05a0</dependsOn>
+    </asset>
+    <asset name="Policy.7b89e7f5-d0ca-4f66-8aa1-1bce2edc05a0" displayName="Policy For API sampleapi[1]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.61d382d1-7e57-4762-876d-74aad55c3ee3</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.e75fd94c-0146-4348-b588-23fb3efa7e56</dependsOn>
+    </asset>
+    <asset name="PolicyAction.e75fd94c-0146-4348-b588-23fb3efa7e56" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API sampleapi[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.61d382d1-7e57-4762-876d-74aad55c3ee3" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API sampleapi[1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+</asset_composite>
