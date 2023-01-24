@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<asset_composite name="APIGatewayAssets" displayName="Assets for API Gateway" runtimeVersion="10.15" targetNamespace="http://namespaces.softwareag.com/webMethods/APIGateway" xmlns="http://namespaces.softwareag.com/acdl/1.0" xmlns:EDA="http://namespaces.softwareag.com/webMethods/EDA" xmlns:MWS="http://namespaces.softwareag.com/webMethods/MWS" xmlns:IS="http://namespaces.softwareag.com/webMethods/IS" xmlns:APIPORTAL="http://namespaces.softwareag.com/webMethods/APIPORTAL" xmlns:AgileApps="http://namespaces.softwareag.com/webMethods/AgileApps" xmlns:BROKER="http://namespaces.softwareag.com/webMethods/BROKER" xmlns:implDetails="http://namespaces.softwareag.com/acdl/implDetails" xmlns:UniversalMessaging="http://namespaces.softwareag.com/webMethods/UniversalMessaging" xmlns:TN="http://namespaces.softwareag.com/webMethods/TN" xmlns:RULES="http://namespaces.softwareag.com/webMethods/RULES" xmlns:BPM="http://namespaces.softwareag.com/webMethods/BPM" xmlns:Optimize="http://namespaces.softwareag.com/webMethods/Optimize">
+    <buildInfo name="BuildTimestamp" value="2023-01-24T10:29:45"/>
+    <asset name="API.b32c9b12-871f-4a79-ae17-fd3c12d89a9d" displayName="bicsapi[v1]" isDeployable="true">
+        <implementation.generic type="API"/>
+        <dependsOn>APIGateway:Policy.d2bb1e09-56dc-4865-8e5c-1656d2cba82a</dependsOn>
+        <dependsOn>APIGateway:RegisteredApplication.EmptyRegisteredApplication</dependsOn>
+    </asset>
+    <asset name="Policy.d2bb1e09-56dc-4865-8e5c-1656d2cba82a" displayName="Policy For API bicsapi[v1]" isDeployable="true">
+        <implementation.generic type="Policy"/>
+        <dependsOn>APIGateway:PolicyAction.21efa41c-242d-47ba-8219-1e34b89333c6</dependsOn>
+        <dependsOn>APIGateway:PolicyAction.b91d0728-ba25-4be4-b765-c17232996456</dependsOn>
+    </asset>
+    <asset name="PolicyAction.b91d0728-ba25-4be4-b765-c17232996456" displayName="Policy Action [Enable HTTP / HTTPS] -&gt; Policy For API bicsapi[v1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="PolicyAction.21efa41c-242d-47ba-8219-1e34b89333c6" displayName="Policy Action [Straight Through Routing] -&gt; Policy For API bicsapi[v1]" isDeployable="true">
+        <implementation.generic type="PolicyAction"/>
+    </asset>
+    <asset name="RegisteredApplication.EmptyRegisteredApplication" displayName="RegisteredApplication [ EmptyRegisteredApplication ]" isDeployable="true">
+        <implementation.generic type="RegisteredApplication"/>
+    </asset>
+</asset_composite>

@@ -31,7 +31,7 @@
 						"enabled": true
 					}
 				],
-				"url": "{{httpInvokeUrl}}/gateway/sampleapi/pet/1",
+				"url": "{{httpInvokeUrl}}/gateway/bicsapi/v1/pet/123",
 				"queryParams": [],
 				"preRequestScript": null,
 				"pathVariables": {},
@@ -86,7 +86,7 @@
 					"enabled": true
 				}
 			],
-			"url": "{{httpInvokeUrl}}/gateway/sampleapi/pet/1",
+			"url": "{{httpInvokeUrl}}/gateway/bicsapi/v1/pet/123",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},

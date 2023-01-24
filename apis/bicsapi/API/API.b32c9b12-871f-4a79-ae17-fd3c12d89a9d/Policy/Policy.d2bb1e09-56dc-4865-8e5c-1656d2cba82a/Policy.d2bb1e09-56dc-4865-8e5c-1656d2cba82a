@@ -1,0 +1,26 @@
+{
+  "id" : "d2bb1e09-56dc-4865-8e5c-1656d2cba82a",
+  "names" : [ {
+    "value" : "Default Policy for API bicsapi",
+    "locale" : "English"
+  } ],
+  "descriptions" : [ {
+    "value" : "",
+    "locale" : "English"
+  } ],
+  "policyEnforcements" : [ {
+    "enforcements" : [ {
+      "enforcementObjectId" : "b91d0728-ba25-4be4-b765-c17232996456"
+    } ],
+    "stageKey" : "transport"
+  }, {
+    "enforcements" : [ {
+      "enforcementObjectId" : "21efa41c-242d-47ba-8219-1e34b89333c6"
+    } ],
+    "stageKey" : "routing"
+  } ],
+  "policyScope" : "SERVICE",
+  "systemPolicy" : false,
+  "global" : false,
+  "active" : false
+}
