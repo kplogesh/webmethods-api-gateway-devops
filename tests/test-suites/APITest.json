@@ -21,7 +21,7 @@
 				}
 			],
 			"request": {
-				"url": "{{httpInvokeUrl}}/gateway/Swagger%20Petstore/1.0.5/pet/123",
+				"url": "{{httpInvokeUrl}}/gateway/sampleapi/1/pet/1",
 				"method": "GET",
 				"header": [
 					{
